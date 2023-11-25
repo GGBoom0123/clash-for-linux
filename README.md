@@ -45,9 +45,24 @@ export CLASH_SECRET=''
 > **注意：** `.env` 文件中的变量 `CLASH_SECRET` 为自定义 Clash Secret，值为空时，脚本将自动生成随机字符串。
 
 ### 启动程序
-
+bash start.sh
 直接运行脚本文件`start.sh`
 
+如果sh文件出现错误：Permission denied，这是因为出现了权限错误：
+
+sh: 1: /etc/profile.d/clash.sh: Permission denied
+1
+sh xxxx表示程序想执行clash.sh这个文件，但是不被允许，出现报错Permission denied
+
+2、解决方法
+终端输入：
+cd /etc/profile.d/
+ll /etc/profile.d/clash.sh
+sudo chmod +777 /etc/profile.d/clash.sh
+1
+2
+3
+给该文件权限后就可以解决这个问题。
 - 进入项目目录
 
 ```bash
@@ -57,7 +72,7 @@ $ cd clash-for-linux
 - 运行启动脚本
 
 ```bash
-$ sudo sh start.sh
+$ bash start.sh
 
 正在检测订阅地址...
 Clash订阅地址可访问！                                      [  OK  ]
