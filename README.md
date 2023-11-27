@@ -45,18 +45,16 @@ export CLASH_SECRET=''
 > **注意：** `.env` 文件中的变量 `CLASH_SECRET` 为自定义 Clash Secret，值为空时，脚本将自动生成随机字符串。
 
 ### 启动程序
-在src文件夹下运行脚本
-root用户与普通用户不一样，需要sudo权限
-记得安装curl工具！！！
+- 在src文件夹下运行脚本
+- root用户与普通用户不一样，需要sudo权限
+- 记得安装curl工具！！！
 ```env
 sudo apt install curl
 ```
+- 直接运行脚本文件`start.sh`
 ```env
 sudo bash start.sh
 ```
-
-直接运行脚本文件`start.sh`
-
 如果sh文件出现错误：Permission denied，这是因为出现了权限错误：
 
 sh: 1: /etc/profile.d/clash.sh: Permission denied
