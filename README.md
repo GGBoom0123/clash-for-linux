@@ -45,7 +45,10 @@ export CLASH_SECRET=''
 > **注意：** `.env` 文件中的变量 `CLASH_SECRET` 为自定义 Clash Secret，值为空时，脚本将自动生成随机字符串。
 
 ### 启动程序
+在src文件夹下运行脚本
 bash start.sh
+
+
 直接运行脚本文件`start.sh`
 
 如果sh文件出现错误：Permission denied，这是因为出现了权限错误：
