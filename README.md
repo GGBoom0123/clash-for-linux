@@ -55,19 +55,6 @@ sudo apt install curl
 ```env
 sudo bash start.sh
 ```
-如果sh文件出现错误：Permission denied，这是因为出现了权限错误：
-
-sh: 1: /etc/profile.d/clash.sh: Permission denied
-1
-sh xxxx表示程序想执行clash.sh这个文件，但是不被允许，出现报错Permission denied
-
-2、解决方法
-终端输入：
-```env
-cd /etc/profile.d/
-ll /etc/profile.d/clash.sh
-sudo chmod +777 /etc/profile.d/clash.sh
-```
 1
 2
 3
