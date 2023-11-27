@@ -24,14 +24,14 @@
 ### 下载项目
 
 ```bash
-$ git clone https://github.com/GGBoom0123/clash-for-linux.git
+git clone https://github.com/GGBoom0123/clash-for-linux.git
 ```
 
 进入到项目目录，编辑`.env`文件，修改变量`CLASH_URL`的值。
 
 ```bash
-$ cd clash-for-linux
-$ vim .env
+cd clash-for-linux
+vim .env
 ```
 
 ### 设置环境变量
@@ -57,9 +57,9 @@ sh xxxx表示程序想执行clash.sh这个文件，但是不被允许，出现�
 2、解决方法
 终端输入：
 ```env
-$ cd /etc/profile.d/
-$ ll /etc/profile.d/clash.sh
-$ sudo chmod +777 /etc/profile.d/clash.sh
+cd /etc/profile.d/
+ll /etc/profile.d/clash.sh
+sudo chmod +777 /etc/profile.d/clash.sh
 ```
 1
 2
@@ -68,13 +68,13 @@ $ sudo chmod +777 /etc/profile.d/clash.sh
 - 进入项目目录
 
 ```bash
-$ cd clash-for-linux
+cd clash-for-linux
 ```
 
 - 运行启动脚本
 
 ```bash
-$ bash start.sh
+bash start.sh
 
 正在检测订阅地址...
 Clash订阅地址可访问！                                      [  OK  ]
@@ -97,8 +97,8 @@ Secret：xxxxxxxxxxxxx
 ```
 
 ```bash
-$ source /etc/profile.d/clash.sh
-$ proxy_on
+source /etc/profile.d/clash.sh
+proxy_on
 ```
 
 - 检查服务端口
@@ -137,20 +137,20 @@ https_proxy=http://127.0.0.1:7890
 - 进入项目目录
 
 ```bash
-$ cd clash-for-linux
+cd clash-for-linux
 ```
 
 - 关闭服务
 
 ```bash
-$ sudo sh shutdown.sh
+sudo sh shutdown.sh
 
 服务关闭成功，请执行以下命令关闭系统代理：proxy_off
 
 ```
 
 ```bash
-$ proxy_off
+proxy_off
 ```
 
 然后检查程序端口、进程以及环境变量`http_proxy|https_proxy`，若都没则说明服务正常关闭。
