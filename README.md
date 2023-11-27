@@ -46,8 +46,14 @@ export CLASH_SECRET=''
 
 ### 启动程序
 在src文件夹下运行脚本
-bash start.sh
 
+记得安装curl工具！！！
+```env
+sudo apt install curl
+```
+```env
+bash start.sh
+```
 
 直接运行脚本文件`start.sh`
 
